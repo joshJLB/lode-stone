@@ -191,3 +191,49 @@
                 font-size: 1.25rem
                 text-transform: lowercase
                 letter-spacing: .15rem
+// Section Four
+.four
+    position: relative
+    .four-container
+        // z-index: 3
+        // position: relative
+        padding: 8rem 0
+        +fb(center,center)
+        flex-direction: column
+        color: #fff 
+        h2 
+            z-index: 3
+            margin-bottom: 3rem
+            font-size: 3rem
+        .four-blog-container
+            z-index: 3
+            margin: 0 auto
+            width: 75%
+            +fb(flex-start,flex-start)
+            @media #{$xlarge}
+                width: 85%
+            @media #{$large}
+                width: 95%
+            @media #{$medium}
+                flex-wrap: wrap
+            .four-blog-post
+                padding: 0 .75rem
+                width: 33.3%
+                @media #{$medium}
+                    margin: 1rem auto
+                    width: 85%
+                @media #{$small}
+                    width: 100%
+                img 
+                    margin-bottom: 2rem
+                    width: 100%
+                h3 
+                    margin-bottom: 1.5rem
+                    text-transform: uppercase
+                p 
+                    font-weight: 300
+                a 
+                    color: #fff 
+                    font-weight: bold 
+                    letter-spacing: .1rem
+                    text-transform: lowercase

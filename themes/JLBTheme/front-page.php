@@ -56,6 +56,40 @@ get_header(); ?>
     </div>
   </section>
 
+  <section class="four">
+    <div class="overlay"></div>
+    <div class="four-container" style="background-image:url(<?=get_field('four_image'); ?>);">
+      <h2><?=get_field('four_title'); ?></h2>
+      <div class="four-blog-container">
+        <?php
+	        $args = array( 'numberposts' => '3' );
+          $recentPosts = wp_get_recent_posts( $args );
+          $mostRecent1 = $recentPosts[0];
+          $mostRecent2 = $recentPosts[1];
+          $mostRecent3 = $recentPosts[2];
+        ?>
+        <div class="four-blog-post">
+          <img src="<?=get_the_post_thumbnail_url($mostRecent1['ID'], 'full')?>" alt="">
+          <h3><?=$mostRecent1['post_title']?></h3>
+          <p><?=$mostRecent1['post_content']?></p>
+          <a href="<?=get_permalink($mostRecent1['ID']); ?>">Read More >></a>
+        </div>
+        <div class="four-blog-post">
+          <img src="<?=get_the_post_thumbnail_url($mostRecent2['ID'], 'full')?>" alt="">
+          <h3><?=$mostRecent2['post_title']?></h3>
+          <p><?=$mostRecent2['post_content']?></p>
+          <a href="<?=get_permalink($mostRecent2['ID']); ?>">Read More >></a>
+        </div>
+        <div class="four-blog-post">
+          <img src="<?=get_the_post_thumbnail_url($mostRecent3['ID'], 'full')?>" alt="">
+          <h3><?=$mostRecent3['post_title']?></h3>
+          <p><?=$mostRecent3['post_content']?></p>
+          <a href="<?=get_permalink($mostRecent3['ID']); ?>">Read More >></a>
+        </div>
+      </div> 
+    </div>
+  </section>
+
 </main>
 
 <?php get_footer();
