@@ -13,6 +13,10 @@
       width: 57%
       position: relative
       text-align: center
+      @media only screen and (max-width: 1650px)
+        width: 70%
+      @media #{$xlarge}
+        width: 90%
       .hero-title, .hero-sub-title
         color: #fff 
       .hero-title 
@@ -54,6 +58,8 @@
                   align-items: center
                   font-size: 1.5rem
                   border-bottom: 15px solid transparent
+                  @media #{$large}
+                    font-size: 1rem
               a.nav-link.active 
                   // height: 5rem
                   border-radius: 0
@@ -68,7 +74,7 @@
               margin: .75rem .75rem .3rem
               background-color: rgba(242,245,240,0.85)
               @media screen and (max-width: 768px)
-                  margin-top: 0
+                  padding: 2.5rem 1rem
               .tab-pane
                   .content-wrapper
                       padding: 2rem 2rem
