@@ -1,0 +1,133 @@
+@import 'variables'
+
+// Slick Styling
+#home
+  .hero 
+    padding: 20rem
+    width: 100%
+    background-size: cover
+    position: relative
+    .hero-container
+      z-index: 3
+      position: relative
+      text-align: center
+      .hero-title, .hero-sub-title
+        color: #fff 
+      // Tabs
+      .tab-container
+          width: 100%
+          @media screen and (max-width: 768px)
+              width: 95%
+          ul
+              padding-bottom: .3rem
+              border-bottom: 0
+              display: flex
+              flex-wrap: nowrap
+              justify-content: center
+              align-items: center
+              @media screen and (max-width: 768px)
+                  display: flex
+                  flex-wrap: wrap
+              li
+                  width: 1%
+                  flex-grow: 1
+                  padding: .3rem
+                  border-radius: 0
+                  text-align: center
+                  @media screen and (max-width: 768px)
+                      width: 100%
+              a.nav-link
+                  background-color: #fff 
+                  border-radius: 0
+                  border: 0
+                  position: relative
+                  width: 100%
+                  color: white
+                  text-transform: uppercase
+                  height: 100%
+                  display: flex
+                  justify-content: center
+                  align-items: center
+                  font-size: 1.2rem
+              a.nav-link.active 
+                  height: 5rem
+                  background-color: green 
+                  color: white
+                  border-radius: 0
+                  border: 0
+                  .arrow-div
+                      opacity: 1
+              a.nav-link:hover 
+                  background-color: green
+          .tab-content
+              margin: -1rem .3rem .3rem .3rem
+              @media screen and (max-width: 768px)
+                  margin-top: 0
+              .tab-pane
+                  .content-wrapper
+                      padding: 2rem 2rem
+                      display: flex
+                      flex-wrap: nowrap
+                      align-items: stretch 
+                      @media screen and (max-width: 1024px)
+                          padding: 2rem 1rem
+                      @media screen and (max-width: 786px)
+                          flex-wrap: wrap 
+                          justify-content: center
+                          align-items: center
+                      .content-holder
+                          padding: 4rem 1rem 4rem 3rem
+                          width: 60%
+                          flex-grow: 1
+                          @media screen and (max-width: 1024px)
+                              padding-left: 0
+                          @media screen and (max-width: 786px)
+                              width: 100%
+                              padding: 0 0 2rem
+                          h3 
+                              font-size: 2rem
+                              font-weight: 700
+                          p 
+                          p:last-child
+                              margin-bottom: 0
+                      .tab-image
+                          background-size: cover 
+                          flex-grow: 3
+                          @media screen and (max-width: 768px)
+                              width: 75%
+                              height: 20rem
+                              flex-grow: 0
+                          @media screen and (max-width: 476px)
+                              width: 100%
+
+
+  .hero-slider
+    height: 100%
+    width: 100%
+  .slick-list, .slick-track
+    height: 100%
+    .hero-slide
+      +bg(cover, center)
+
+.slick-dots
+  position: absolute
+  z-index: 3
+  +fb(center, center)
+  bottom: 1rem
+  left: 50%
+  transform: translateX(-50%)
+  width: auto
+  list-style: none
+  li
+    +fb(center, center)
+  button
+    padding: 0.25rem
+    margin: 0 1rem
+    background-color: transparentize(white, 0.5)
+    color: transparent
+    border: none
+    &:focus
+      outline: none
+  .slick-active
+    button
+      background-color: white
