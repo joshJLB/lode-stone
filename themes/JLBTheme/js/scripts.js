@@ -2,11 +2,11 @@ jQuery(document).ready(function( $ ) {
 
 // on scroll watch header
 $(window).on("scroll ready", function() {
-  if ( $(window).scrollTop() > 50 ) {
-    $(".header").addClass("active");
+  if ( $(window).scrollTop() > 50 ) { 
+    $("header").addClass("active");
     $('.sub-menu').addClass('scrollMenu');
   } else {
-     $(".header").removeClass("active");
+     $("header").removeClass("active");
      $('.sub-menu').removeClass('scrollMenu');
   }
 });

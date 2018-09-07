@@ -8,6 +8,7 @@ header
   left: 0
   transition: 0.25s
   z-index: 999
+  color: #fff  
   .header
     +fb(center, space-between)
     padding: 1rem 3rem 1rem 2rem
@@ -32,7 +33,7 @@ header
           a
             display: inline-block
             padding: 0.5rem
-            color: #fff
+            // color: #fff
             letter-spacing: .25rem
             text-transform: uppercase
         .menu-item-has-children.rotate
@@ -71,6 +72,20 @@ header
               white-space: nowrap
               a
                 padding: 0.25rem
+html body header 
+  a 
+    color: #fff 
+  .bar 
+    background-color: #fff
+  .bar.active
+    background-color: #000  
+header.active
+  background: #fff  
+  transition: .5s
+  a
+    color: #000 
+  .bar 
+    background-color: #000 
 
 // Mobile Menu Button
 .mobile-button
@@ -134,12 +149,7 @@ header
 .mobileScroll
   overflow-y: hidden
 
-// mobile menu button that changes to X
-.bar.active
-  background-color: #fff
-
 .bar
-  background-color: #fff
   height: 3px
   width: 2rem
   margin-bottom: 8px
