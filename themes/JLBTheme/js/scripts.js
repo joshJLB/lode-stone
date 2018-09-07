@@ -85,4 +85,13 @@ function detectBrowser() {
 }
 $('body').addClass(detectBrowser());
 
+// sliders
+$('.two-inner').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000
+});
+
 });//close all jquery

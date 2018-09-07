@@ -1,6 +1,8 @@
 @import 'variables'
 
 // Home Page Styling
+
+// Section One
 .one 
     .one-container
         margin-top: 3rem
@@ -38,6 +40,7 @@
                 text-transform: lowercase
                 letter-spacing: .15rem
         .one-image
+            z-index: 5
             position: relative
             @media #{$large}
                 height: 50rem
@@ -57,3 +60,64 @@
             left: 0
             border-bottom: 8rem solid white 
             border-right: 8rem solid transparent
+// Section Two
+.two
+    margin-top: -2rem
+    position: relative
+    .two-container
+        padding: 17rem 0
+        position: relative
+        background-size: cover
+        .two-inner
+            z-index: 3
+            margin: 0 auto 
+            width: 50%
+            position: relative
+            +fb(center,center)
+            .two-content
+                text-align: center
+                color: #fff 
+                h2 
+                    margin-bottom: 3rem
+                    font-size: 3rem
+                p 
+                    font-weight: 300
+                    letter-spacing: .1rem
+                    line-height: 2rem
+                a 
+                    color: #fff 
+                    font-weight: bold 
+                    text-transform: lowercase
+                    letter-spacing: .1rem
+    .two-before, .two-after
+        z-index: 3
+        position: absolute
+        width: 50%
+        height: 8rem
+        background: #fff
+        .two-before-inner, .two-after-inner
+            width: 100%
+            height: 100%
+            background: #fff  
+            position: relative 
+        .two-before-inner:before
+            content: ''
+            position: absolute
+            top: 0
+            right: 100%
+            border-top: 8rem solid #fff 
+            border-left: 8rem solid transparent
+        .two-after-inner:after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 100%
+            border-bottom: 8rem solid #fff 
+            border-right: 8rem solid transparent
+    .two-before
+        top: 0
+        right: 0
+    .two-after
+        bottom: 0
+        left: 0
+    
