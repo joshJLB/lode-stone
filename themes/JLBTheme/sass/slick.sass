@@ -3,23 +3,27 @@
 // Slick Styling
 #home
   .hero 
-    padding: 20rem
+    padding: 23rem 0 7rem
     width: 100%
     background-size: cover
     position: relative
     .hero-container
       z-index: 3
+      margin: 0 auto
+      width: 57%
       position: relative
       text-align: center
       .hero-title, .hero-sub-title
         color: #fff 
+      .hero-title 
+        margin-bottom: 1rem
       // Tabs
       .tab-container
+          margin-top: 1.5rem
           width: 100%
           @media screen and (max-width: 768px)
               width: 95%
           ul
-              padding-bottom: .3rem
               border-bottom: 0
               display: flex
               flex-wrap: nowrap
@@ -31,36 +35,38 @@
               li
                   width: 1%
                   flex-grow: 1
-                  padding: .3rem
+                  padding: .75rem
                   border-radius: 0
                   text-align: center
                   @media screen and (max-width: 768px)
                       width: 100%
               a.nav-link
-                  background-color: #fff 
+                  padding: 2.5rem
+                  background-color: rgba(242,245,240,0.85)
                   border-radius: 0
                   border: 0
                   position: relative
                   width: 100%
-                  color: white
-                  text-transform: uppercase
+                  color: black
                   height: 100%
                   display: flex
                   justify-content: center
                   align-items: center
-                  font-size: 1.2rem
+                  font-size: 1.5rem
+                  border-bottom: 15px solid transparent
               a.nav-link.active 
-                  height: 5rem
-                  background-color: green 
-                  color: white
+                  // height: 5rem
                   border-radius: 0
-                  border: 0
+                  border-bottom: 15px solid $color2
                   .arrow-div
                       opacity: 1
               a.nav-link:hover 
-                  background-color: green
+                  border-bottom-color: $color2
+                  transition: .25s 
           .tab-content
-              margin: -1rem .3rem .3rem .3rem
+              padding: 2.5rem 5rem
+              margin: .75rem .75rem .3rem
+              background-color: rgba(242,245,240,0.85)
               @media screen and (max-width: 768px)
                   margin-top: 0
               .tab-pane
