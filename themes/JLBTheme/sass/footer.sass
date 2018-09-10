@@ -2,8 +2,34 @@
 
 // Footer Styling
 .footer
-  background-color: $color1
+  background-color: $color2
+  .footer-upper
+    padding: 2rem 0
+    margin: 0 auto
+    width: 98%
+    +fb(center,center)
+    border-bottom: 1px solid #fff
+    @media #{$medium}
+      flex-direction: column
+    p 
+      margin: 0
+      color: #fff
+      font-weight: 300
+      text-align: right 
+      padding: 0 4rem
+      @media #{$large}
+        padding: 1rem 1.5rem
+    .footer-phone
+      text-align: left
+    img 
+      max-width: 100%
+  .footer-lower 
+    color: #fff
+    text-align: center
+    p 
+      text-align: center
   .jlb
+    background-color: $color1
     color: white
     padding: 1rem
     p

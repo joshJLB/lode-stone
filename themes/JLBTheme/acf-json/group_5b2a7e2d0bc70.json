@@ -1,23 +1,6 @@
 {
     "key": "group_5b2a7e2d0bc70",
     "title": "Contact",
-    "location": [
-        [
-            {
-                "param": "options_page",
-                "operator": "==",
-                "value": "acf-options-contact-links"
-            }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": 1,
-    "description": "",
     "fields": [
         {
             "key": "field_5b2a7e323260e",
@@ -188,7 +171,44 @@
                     "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_5b9688b1154e0",
+            "label": "Disclaimers",
+            "name": "disclaimers",
+            "type": "wysiwyg",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
-    "modified": 1536250897
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-contact-links"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1536592073
 }

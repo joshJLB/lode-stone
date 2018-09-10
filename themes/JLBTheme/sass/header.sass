@@ -33,9 +33,10 @@ header
           a
             display: inline-block
             padding: 0.5rem
-            // color: #fff
             letter-spacing: .25rem
             text-transform: uppercase
+          a:hover 
+            color: $color3
         .menu-item-has-children.rotate
           &:after
             transform: rotate(180deg) translateY(50%)
@@ -77,15 +78,15 @@ html body header
     color: #fff 
   .bar 
     background-color: #fff
-  .bar.active
-    background-color: #000  
+  .header.active
+    background-color: $color2
+    transition: 1s
 header.active
-  background: #fff  
-  transition: .5s
-  a
-    color: #000 
-  .bar 
-    background-color: #000 
+  .header
+    background: $color2  
+    transition: .5s
+    box-shadow: 0 0 5px $color1
+ 
 
 // Mobile Menu Button
 .mobile-button

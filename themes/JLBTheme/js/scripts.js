@@ -20,6 +20,7 @@ $('.mobile-button').click(function() {
   }
   $('.bar').toggleClass('change');
 
+  $('.header').toggleClass('active');
   // toggle mobile menu
   $('.mobile-menu').toggleClass('active');
   $('.bar').toggleClass('active');
