@@ -1,0 +1,74 @@
+@import 'variables'
+    
+.card-container
+    padding: 15rem 0
+    background-color: #eee
+    text-align: center
+    color: $color4
+    h2 
+        margin-bottom: 2rem
+        font-size: 3rem
+    .card-description
+        margin: 0 auto 4rem
+        width: 65%
+        @media #{$medium}
+            width: 98%
+    .team-members-container
+        margin: 0 auto
+        width: 85%
+        +fb(stretch, flex-start)
+        @media #{$xxlarge}
+            width: 98%
+        @media #{$xlarge}
+            width: 65%
+            flex-wrap: wrap
+        @media #{$large}
+            width: 85%
+        @media #{$medium}
+            width: 98%
+        .team-member
+            padding: 1rem
+            width: 25%
+            @media #{$xlarge}
+                width: 50%
+            @media #{$small}
+                width: 100%
+            .team-member-inner
+                padding-bottom: 2rem
+                background-color: #fff 
+                border-radius: 1px
+                .team-image-container
+                    padding: 0 2rem
+                    margin-bottom: 1rem
+                    height: 20rem
+                    +bg(cover,center)
+                    +fb(center,center)
+                    position: relative
+                    .overlay3
+                        opacity: 0
+                    p 
+                        z-index: 3
+                        opacity: 0
+                        position: relative
+                .team-image-container:hover
+                    p, .overlay3 
+                        opacity: 1
+                        transition: .25s
+                h3, h4 
+                    text-transform: uppercase
+                h3 
+                    @media #{$large}
+                        font-size: 1.5rem
+                h4 
+                    margin-bottom: 1rem
+                    font-family: $font2
+                    font-size: 1.25rem
+                    font-weight: 300
+                    @media #{$large}
+                        font-size: 1rem
+                a 
+                    margin-top: 1rem
+                    color: $color4
+                    font-weight: bold
+                    letter-spacing: .1rem
+                    text-transform: lowercase 
