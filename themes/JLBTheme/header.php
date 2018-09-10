@@ -36,6 +36,9 @@
       <div class="mobile-menu" id="mobile-menu">
         <nav class="menu-container">
           <?php wp_nav_menu( array( 'menu' => 'menu-one' ) ); ?>
+          <div class="menu-two-mobile">
+            <?php wp_nav_menu( array( 'menu' => 'menu-two' ) ); ?>
+          </div>
         </nav>
       </div>
 

@@ -20,8 +20,12 @@ header
         .logo
           +bg(contain, center)
           height: 5rem
+          @media #{$small}
+            width: 8rem
     .header-nav
       width: 80%
+      @media #{$medium}
+        display: none
       .menu
         +fb(center, flex-end)
         padding: 0
@@ -113,6 +117,10 @@ header.active
     padding-bottom: 2rem
     height: 100%
     overflow: auto
+    .menu-two-mobile
+      visibility: hidden
+      @media #{$medium}
+        visibility: visible
   .menu
     display: block
     padding: 0
