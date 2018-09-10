@@ -101,4 +101,8 @@ $('.four-blog-content').text(function(index, currentContent) {
   return currentContent.substr(0,385) + '...';
 });
 
+$('.card-demo-content').text(function(index, currentContent) {
+  return currentContent.substr(0,385) + '...';
+});
+
 });//close all jquery
