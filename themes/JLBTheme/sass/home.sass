@@ -237,3 +237,38 @@
                     font-weight: bold 
                     letter-spacing: .1rem
                     text-transform: lowercase
+// Section Five
+.five
+    .five-container
+        padding: 10rem 0
+        margin: 0 auto
+        width: 75%
+        +fb(center,center)
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        color: $color4
+        @media #{$xlarge}
+            padding: 10rem 1rem
+            background-size: cover
+            width: 100%
+// Section Six
+.six 
+    background: $color3
+    .six-container
+        padding: 8rem 0
+        margin: 0 auto
+        width: 55%
+        +fb(center,center)
+        flex-direction: column
+        color: $color4
+        text-align: center
+        @media #{$xlarge}
+            width: 75%
+        @media #{$medium}
+            width: 85%
+        h2 
+            margin-bottom: 1rem
+            font-size: 1.5rem
+            font-family: $font2
+            text-transform: uppercase 

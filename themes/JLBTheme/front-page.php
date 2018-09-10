@@ -90,6 +90,19 @@ get_header(); ?>
     </div>
   </section>
 
+  <section class="five">
+    <div class="five-container" style="background-image: url(<?=get_field('five_image'); ?>)">
+      <?=get_field('five_content'); ?>
+    </div>
+  </section>
+
+  <section class="six">
+    <div class="six-container">
+      <h2><?=get_field('six_title'); ?></h2>
+      <?=get_field('six_content'); ?>
+    </div>
+  </section>
+
 </main>
 
 <?php get_footer();
