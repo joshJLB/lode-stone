@@ -20,6 +20,7 @@ $('.mobile-button').click(function() {
   }
   $('.bar').toggleClass('change');
 
+  // change header color
   $('.header').toggleClass('active');
   // toggle mobile menu
   $('.mobile-menu').toggleClass('active');
@@ -93,6 +94,11 @@ $('.two-inner').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000
+});
+
+// substrings
+$('.four-blog-content').text(function(index, currentContent) {
+  return currentContent.substr(0,385) + '...';
 });
 
 });//close all jquery
