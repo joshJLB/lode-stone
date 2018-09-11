@@ -1,0 +1,42 @@
+@import 'variables'
+
+// Text Block Styles
+.text-block-container
+    margin: 5rem auto
+    width: 70%
+    color: $color4
+    text-align: center
+    @media #{$xlarge}
+        width: 80%
+    @media #{$large}
+        width: 95%
+    h2 
+        margin-bottom: 1rem
+        font-size: 3rem
+        @media #{$large}
+            font-size: 2.5rem
+        @media #{$small}
+            font-size: 2rem
+    .text-block-columns
+        margin: 0 auto
+        width: 80%
+        text-align: justify
+        +fb(flex-start, flex-start)
+        @media #{$xxlarge}
+            width: 90%
+        @media #{$medium}
+            width: 100%
+        @media #{$small}
+            flex-wrap: wrap
+        p  
+            padding: 2rem
+            width: 50%
+            @media #{$medium}
+                padding: .5rem 1rem
+            @media #{$small}
+                width: 100%
+        .column-one
+            font-style: italic
+            font-weight: 300
+        .column-two
+            font-weight: bold
