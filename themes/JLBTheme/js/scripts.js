@@ -98,7 +98,7 @@ $('.two-inner').slick({
 
 // substrings
 $('.four-blog-content').text(function(index, currentContent) {
-  return currentContent.substr(0,385) + '...';
+  return currentContent.substr(0,200) + '...';
 });
 
 $('.card-demo-content').text(function(index, currentContent) {

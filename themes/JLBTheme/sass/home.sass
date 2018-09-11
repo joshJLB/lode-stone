@@ -207,7 +207,7 @@
             z-index: 3
             margin: 0 auto
             width: 75%
-            +fb(flex-start,flex-start)
+            +fb(stretch,flex-start)
             @media #{$xlarge}
                 width: 85%
             @media #{$large}
@@ -217,6 +217,8 @@
             .four-blog-post
                 padding: 0 .75rem
                 width: 33.3%
+                +fb(flex-start, stretch)
+                flex-direction: column
                 @media #{$medium}
                     margin: 1rem auto
                     width: 85%
@@ -229,8 +231,13 @@
                     margin-bottom: 1.5rem
                     text-transform: uppercase
                 p 
+                    margin-bottom: 0
+                .four-blog-content
+                    margin-bottom: 1rem
+                    font-family: $font2
                     font-weight: 300
                 a 
+                    justify-content: flex-end
                     color: #fff 
                     font-weight: bold 
                     letter-spacing: .1rem
