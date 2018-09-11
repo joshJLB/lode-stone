@@ -105,4 +105,8 @@ $('.card-demo-content').text(function(index, currentContent) {
   return currentContent.substr(0,385) + '...';
 });
 
+$('.blog-excerpt').text(function(index, currentContent) {
+  return currentContent.substr(0,300) + '...';
+});
+
 });//close all jquery

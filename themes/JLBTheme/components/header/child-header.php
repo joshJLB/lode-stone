@@ -15,8 +15,9 @@
   <div class="overlay"></div>
   <?php if (is_home()): ?>
     <h1 class="title">Blog</h1>
+    <p><?=get_field('child_tagline'); ?></p>
   <?php elseif (is_single()): ?>
-    <h1 class="title"></h1>
+    <h1 class="title"><?php echo get_the_title(); ?></h1>
     <!-- Anything else for single page child header here -->
   <?php else: ?>
     <h1 class="title"><?php echo get_the_title(); ?></h1>

@@ -19,10 +19,17 @@ get_header(); ?>
         <?php while ( $query->have_posts() ) : $query->the_post() ?>
 
           <div class="blog-post-container">
+            <div class="blog-post-image" style="background-image: url(<?=the_post_thumbnail_url(); ?>);">
+              <div class="overlay"></div>
+              <div class="blog-time-wrapper">
+                <h4><?=the_time('M'); ?></h4>
+                <h4><?=the_time('j'); ?></h4>
+              </div>
+            </div>
             <div class="blog-post">
               <h3><?php the_title(); ?></h3>
-              <h5><?php the_author(); ?></h5>
-              <?php the_excerpt(); ?>
+              <div class="blog-excerpt"><?php the_excerpt(); ?></div>
+              <a href="<?=the_permalink(); ?>">Read More</a>
             </div>
           </div>
 

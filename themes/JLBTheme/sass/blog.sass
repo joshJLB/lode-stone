@@ -1,3 +1,65 @@
 @import 'variables'
 
 // Blog Styling
+.blog-container
+    margin: 0 auto
+    width: 75%
+    @media #{$xxlarge}
+        width: 85%
+    @media #{$xlarge}
+        width: 90%
+    .blog-post-container
+        margin: 10rem auto
+        +fb(stretch, flex-start)
+        @media #{$large}
+            margin: 5rem auto
+        @media #{$medium}
+            flex-wrap: wrap
+        .blog-post-image
+            width: 30%
+            position: relative
+            background-size: cover
+            border-radius: 5px
+            +fb(center, center)
+            @media #{$large}
+                width: 40%
+            @media #{$medium}
+                width: 100%
+                height: 20rem
+            .overlay
+                border-radius: 5px
+            .blog-time-wrapper 
+                z-index: 3
+                padding: .75rem 2rem
+                background: linear-gradient(rgba(75,116,37,.7)), linear-gradient(rgba(75,116,37,.7))
+                border-radius: 5px
+                color: #fff 
+                text-align: center
+                h4 
+                    margin: 0
+                    font-family: $font2
+                    text-transform: uppercase
+        .blog-post
+            padding: 5rem 3rem
+            width: 70%
+            color: $color4
+            +fb(flex-start, center)
+            flex-direction: column
+            @media #{$xlarge}
+                padding: 3rem 2rem
+            @media #{$large}
+                width: 60%
+            @media #{$medium}
+                width: 100%
+            @media #{$small}
+                padding: 3rem 0
+            h3 
+                margin-bottom: 1rem
+            .blog-excerpt
+                margin-bottom: 1rem
+            a 
+                padding-right: 1rem
+                align-self: flex-end
+                color: $color4
+                font-weight: bold
+                
