@@ -62,4 +62,42 @@
                 align-self: flex-end
                 color: $color4
                 font-weight: bold
-                
+// Single Blog Post
+.single-blog-container
+    margin: 4rem auto
+    width: 65%
+    color: $color4
+    line-height: 1.75rem
+    @media #{$xxlarge}
+        width: 75%
+    @media #{$xlarge}
+        width: 85%
+    @media #{$small}
+        width: 95%
+    img 
+        width: 33.5rem
+        padding: 0 3rem 2rem 0
+        float: left
+        @media #{$large}
+            padding: 0 2rem 1rem 0
+            width: 25rem
+        @media #{$medium}
+            float: none
+            padding: 0
+            margin-bottom: 2rem
+            width: 100%
+    .date-wrapper
+        margin-bottom: 2rem
+        position: relative
+        .single-blog-date
+    .date-wrapper:before
+        content: ''
+        width: 17rem
+        position: absolute
+        top: 100%
+        left: 33.5rem
+        border-bottom: 2px solid $color4
+        @media #{$large}
+            left: 25rem
+        @media #{$medium}
+            left: 0        
