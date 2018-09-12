@@ -17,9 +17,22 @@
         margin: 0 auto
         width: 75%
         +fb(center,flex-start)
+        @media #{$xlarge}
+            width: 85%
+        @media #{$large}
+            padding: 0 .75rem
+            width: 100%
+        @media #{$medium}
+            width: 85%
+            flex-wrap: wrap
+        @media #{$small}
+            width: 100%
         .single-card
             padding: .75rem
             width: 33.3%
+            @media #{$medium}
+                margin-bottom: 1rem
+                width: 100%
             img 
                 margin-bottom: 1.5rem
                 width: 100%

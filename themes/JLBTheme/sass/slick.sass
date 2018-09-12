@@ -7,8 +7,10 @@
     width: 100%
     background-size: cover
     position: relative
+    .overlay.is-trident
+        background: rgba(0,0,0,0.3)
     .hero-container
-      z-index: 3
+      z-index: 4
       margin: 0 auto
       width: 57%
       position: relative
@@ -26,6 +28,7 @@
           margin-top: 1.5rem
           width: 100%
           @media screen and (max-width: 768px)
+              margin: 0 auto
               width: 95%
           ul
               border-bottom: 0

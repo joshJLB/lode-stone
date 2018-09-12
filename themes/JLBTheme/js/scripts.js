@@ -87,6 +87,11 @@ function detectBrowser() {
 }
 $('body').addClass(detectBrowser());
 
+$('.overlay').addClass(detectBrowser());
+$('.overlay2').addClass(detectBrowser());
+$('.overlay3').addClass(detectBrowser());
+$('.four-blog-post').addClass(detectBrowser());
+$('.four-blog-content').addClass(detectBrowser());
 // sliders
 $('.two-inner').slick({
   infinite: true,
@@ -97,9 +102,16 @@ $('.two-inner').slick({
 });
 
 // substrings
-$('.four-blog-content').text(function(index, currentContent) {
-  return currentContent.substr(0,200) + '...';
-});
+if ($('four-blog-content').hasClass('is-trident')) {
+  $('.four-blog-ie').text(function(index, currentContent) {
+    return currentContent.substr(0,200) + '...';
+  });
+} else {
+  $('.four-blog-ie').text(function(index, currentContent) {
+    return currentContent.substr(0,200) + '...';
+  });
+}
+
 
 $('.card-demo-content').text(function(index, currentContent) {
   return currentContent.substr(0,385) + '...';

@@ -71,19 +71,19 @@ get_header(); ?>
         <div class="four-blog-post">
           <img src="<?=get_the_post_thumbnail_url($mostRecent1['ID'], 'full')?>" alt="">
           <h3><?=$mostRecent1['post_title']?></h3>
-          <div class="four-blog-content"><p><?=$mostRecent1['post_content']?></p></div>
+          <div class="four-blog-content"><p class="four-blog-ie"><?=$mostRecent1['post_content']?></p></div>
           <a href="<?=get_permalink($mostRecent1['ID']); ?>">Read More >></a>
         </div>
         <div class="four-blog-post">
           <img src="<?=get_the_post_thumbnail_url($mostRecent2['ID'], 'full')?>" alt="">
           <h3><?=$mostRecent2['post_title']?></h3>
-          <div class="four-blog-content"><p><?=$mostRecent2['post_content']?></p></div>
+          <div class="four-blog-content"><p class="four-blog-ie"><?=$mostRecent2['post_content']?></p></div>
           <a href="<?=get_permalink($mostRecent2['ID']); ?>">Read More >></a>
         </div>
         <div class="four-blog-post">
           <img src="<?=get_the_post_thumbnail_url($mostRecent3['ID'], 'full')?>" alt="">
           <h3><?=$mostRecent3['post_title']?></h3>
-          <div class="four-blog-content"><p><?=$mostRecent3['post_content']?></p></div>
+          <div class="four-blog-content"><p class="four-blog-ie"><?=$mostRecent3['post_content']?></p></div>
           <a href="<?=get_permalink($mostRecent3['ID']); ?>">Read More >></a>
         </div>
       </div> 

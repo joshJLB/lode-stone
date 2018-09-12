@@ -3,7 +3,10 @@
   Template Name: Contact
   contact.php
 */
-get_header(); ?>
+  get_header(); 
+  $string = get_field('address', 'option');
+  $address = wp_strip_all_tags($string, true);
+?>
 
 <main id="contact">
   <?php get_template_part('components/header/child-header'); ?>
@@ -20,7 +23,7 @@ get_header(); ?>
         </a>
       </div>
       <div class="contact-icon">
-        <a href="tel:<?=get_field('phone', 'option'); ?>">
+        <a href="http://maps.google.com/?q=<?=$address; ?>" target="_blank">
           <i class="fas fa-map-marker-alt"></i>
           <p>Visit us</p>
         </a>

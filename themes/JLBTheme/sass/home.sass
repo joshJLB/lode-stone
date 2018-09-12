@@ -70,6 +70,8 @@
         padding: 20rem 0
         position: relative
         background-size: cover
+        .overlay2.is-trident
+            background: rgba(75,116,37,.4)
         .two-inner
             z-index: 3
             margin: 0 auto 
@@ -194,6 +196,8 @@
 // Section Four
 .four
     position: relative
+    .overlay.is-trident
+        background: rgba(0,0,0,0.3)
     .four-container
         padding: 8rem 0
         +fb(center,center)
@@ -214,9 +218,14 @@
                 width: 95%
             @media #{$medium}
                 flex-wrap: wrap
+            .four-blog-post.is-trident
+                a 
+                    flex-grow: 1
+                    margin-top: auto
             .four-blog-post
                 padding: 0 .75rem
                 width: 33.3%
+                // height: 100%
                 +fb(flex-start, stretch)
                 flex-direction: column
                 @media #{$medium}
@@ -227,17 +236,21 @@
                 img 
                     margin-bottom: 2rem
                     width: 100%
+                    flex-shrink: 0
                 h3 
+                    width: 100%
                     margin-bottom: 1.5rem
                     text-transform: uppercase
                 p 
                     margin-bottom: 0
                 .four-blog-content
+                    flex-grow: 1
+                    width: 100%
                     margin-bottom: 1rem
                     font-family: $font2
                     font-weight: 300
                 a 
-                    justify-content: flex-end
+                    // justify-self: flex-end
                     color: #fff 
                     font-weight: bold 
                     letter-spacing: .1rem
@@ -254,6 +267,9 @@
         color: $color4
         @media #{$xlarge}
             padding: 10rem 1rem
+            width: 100%
+            text-align: center
+        p 
             width: 100%
 // Section Six
 .six 
@@ -275,3 +291,5 @@
             font-size: 1.5rem
             font-family: $font2
             text-transform: uppercase 
+        p 
+            width: 100%
