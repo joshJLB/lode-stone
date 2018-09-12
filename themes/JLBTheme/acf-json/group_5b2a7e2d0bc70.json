@@ -3,6 +3,46 @@
     "title": "Contact",
     "fields": [
         {
+            "key": "field_5b992d6e39e85",
+            "label": "Contact Title",
+            "name": "contact_title",
+            "type": "text",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b992d8539e86",
+            "label": "Contact Sub Title",
+            "name": "contact_sub_title",
+            "type": "text",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5b2a7e323260e",
             "label": "Phone",
             "name": "phone",
@@ -210,5 +250,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1536592073
+    "modified": 1536765336
 }

@@ -1,3 +1,43 @@
 @import 'variables'
 
 // Contact Page Styling
+.contact-container
+    margin-top: 4rem
+    color: $color4
+    text-align: center
+    h2 
+        margin-bottom: 1rem
+        font-size: 3rem
+        font-weight: 700
+        text-transform: uppercase
+        @media #{$small}
+            font-size: 2rem
+    h4 
+        margin-bottom: 3rem
+        font-family: $font2
+        font-weight: 300
+        @media #{$small}
+            font-size: 1.25rem
+    .contact-icon-containers
+        margin: 0 auto 
+        width: 65%
+        +fb(center, space-around)
+        @media #{$medium}
+            width: 85%
+        @media #{$small}
+            width: 100%
+        .contact-icon
+            a 
+                color: $color4
+                font-size: 4rem
+                @media #{$small}
+                    font-size: 3rem
+                p 
+                    margin-top: -.5rem
+                    font-size: 1.25rem
+                    font-style: italic
+                    @media #{$small}
+                        font-size: 1rem
+            a:hover
+                color: #555  
+                transition: .25s
